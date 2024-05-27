@@ -1,0 +1,20 @@
+
+{% extends 'partials/base.html'%}
+{% load static %}
+{% block content %}
+
+<body>
+    {% if messages %}
+    {% for message in messages  %}
+        <div class="message">
+            <strong>{{ message }}</strong>
+        </div>
+    {% endfor %}
+{% endif %}
+
+  
+  <p>{{ category.title }}</p>
+</body>
+
+
+{% endblock content %}
